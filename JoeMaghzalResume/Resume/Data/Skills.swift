@@ -11,6 +11,7 @@ enum Skills {
     static let items = [
         "Swift",
         "SwiftUI",
+        "Combine",
         "Framework development & API design",
         "XCTest/SwiftTest",
         "DocC",
