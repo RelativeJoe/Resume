@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct HeaderItemsView: View {
-    let spacing: Double
     let items: [HeaderItem]
     var body: some View {
-        HStack(spacing: spacing) {
+        HStack {
             ForEach(items) { item in
                 HStack(spacing: 2) {
-                    Image(systemName: item.image)
+                    Image(systemName: item.systemImage)
+                        .font(.pdf(.footnote))
                         .foregroundStyle(.second)
                     Text(item.text)
                         .foregroundStyle(.darkText)
                 }
+                Spacer()
             }
             Spacer()
-                .frame(width: spacing/2)
         }
     }
 }
@@ -29,11 +29,9 @@ struct HeaderItemsView: View {
 struct HeaderItem: Identifiable {
     let id = UUID()
     let text: String
-    let image: String
+    let systemImage: String
 }
 
 #Preview {
-    HeaderItemsView(spacing: 12, items: [
-        HeaderItem(text: "Title", image: "location.fill")
-    ])
+    HeaderItemsView(items: Header.items)
 }

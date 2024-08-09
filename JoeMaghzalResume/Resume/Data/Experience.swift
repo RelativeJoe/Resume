@@ -1,5 +1,5 @@
 //
-//  ExperienceData.swift
+//  Experience.swift
 //  JoeMaghzalResume
 //
 //  Created by Joe Maghzal on 8/8/24.
@@ -10,8 +10,8 @@ import SwiftUI
 enum Experience: CaseIterable {
     case toters, montyMobile, bimPOS
     
-    static var sections: [TableItem] {
-        return allCases.map(\.section)
+    static var items: [TableItem] {
+        return allCases.map(\.item)
     }
 }
 
@@ -22,19 +22,20 @@ extension Experience {
                 return [
                     "Enhanced maintainability and modularity by refactoring and decoupling network modules using SPM and driving code modularization through the expert application of design patterns.",
                     "Reduced the number of support chats inquiring about order statuses by 32% and boosted user engagement with real-time updates by developing Live Activities.",
-                    "Saved the company money by preventing the abuse of our OTP endpoints by implementing the App Attest service.",
-                    "Increased app stability and performance by profiling the app using Instruments and refactoring components to incorporate async/awai.",
-                    "Increased the number of crash free sessions by addressing crashes that affected 7.5k users.",
+                    "Saved the company money and unblocked 1k iPad users who were unable to log in by preventing abuse of our OTP endpoints through the implementation of the App Attest service.",
+                    "Increased app stability and performance by profiling the app using Instruments and refactoring components to incorporate SwiftUI and async/awai.",
+                    "Improved user experience and raised the crash-free session rate from 97% to 99.8% by addressing critical crashes that impacted 7.5k+ users.",
                     "Reduced the need for CI/CD pipeline maintenance by migrating from CircleCI to Xcode Cloud.",
-                    "Enhanced code security, and upheld high code quality standards through thorough code reviews while delivering impactful & constructive feedback."
+                    "Enhanced code security, and upheld high code quality standards through thorough collaborative code reviews while delivering impactful & constructive feedback."
                 ]
             case .montyMobile:
                 return [
+                    "Smoothened the user experience of our best-selling app by migrating the codebase from UIKit to SwiftUI, achieving and maintaining a 99% crash-free session rate.",
                     "Improved our app's data flow management by introducing the Combine framework to our MVVM architecture.",
-                    "Reduced the app's code complexity by implementing custom tools using property wrappers & result builders, eliminating repetitive code and logic for a more maintainable codebase.",
+                    "Eliminated 1150 repetitive lines of code by implementing custom tools using property wrappers & result builders for a more maintainable codebase.",
                     "Facilitated the flow of domain and technical knowledge within the team by organizing and leading comprehensive training sessions.",
-                    "Promoted adherence to coding standards and ensured code consistency by conducting thorough code reviews, and providing guidance to team members.",
-                    "Ensured clear understanding and alignment on project objectives by effectively communicating complex concepts in team settings and cross-departmental meetings."
+                    "Promoted adherence to coding standards and ensured code consistency by conducting code reviews, and providing guidance to team members on collaborative projects.",
+                    "Ensured clear understanding and alignment on project objectives by effectively communicating complex concepts in team settings and cross-functional teamwork."
                 ]
             case .bimPOS:
                 return [
@@ -45,13 +46,13 @@ extension Experience {
                 ]
         }
     }
-    var section: TableItem {
+    var item: TableItem {
         switch self {
             case .toters:
                 return TableItem(
                     title: "iOS Engineer",
                     subTitle: "Toters",
-                    body: "https://www.totersapp.com",
+                    link: LinkItem(url: "https://www.totersapp.com"),
                     bullets: bullets,
                     date: "11/2023 - Present",
                     location: "Zalka, Lebanon"
@@ -60,7 +61,7 @@ extension Experience {
                 return TableItem(
                     title: "iOS Developer",
                     subTitle: "Monty Mobile",
-                    body: "https://montymobile.com",
+                    link: LinkItem(url: "https://montymobile.com"),
                     bullets: bullets,
                     date: "03/2021 - 10/2023",
                     location: "Beirut, Lebanon"
@@ -69,7 +70,7 @@ extension Experience {
                 return TableItem(
                     title: "iOS Developer",
                     subTitle: "BIM POS",
-                    body: "https://bimpos.com",
+                    link: LinkItem(url: "https://bimpos.com"),
                     bullets: bullets,
                     date: "11/2020 - 03/2021",
                     location: "Beirut, Lebanon"

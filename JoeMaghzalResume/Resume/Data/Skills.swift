@@ -6,3 +6,27 @@
 //
 
 import Foundation
+
+enum Skills {
+    static let items = [
+        "Swift",
+        "SwiftUI",
+        "Framework development & API design",
+        "XCTest/SwiftTest",
+        "DocC",
+        "CoreData/SwiftData",
+        "SwiftCharts",
+        "WidgetKit/ActivityKit",
+        "UIKit/AppKit/WatchKit",
+        "Swift Macros",
+        "CoreML/CreateML",
+        "Swift Vapor",
+        "SPM/Modular Architecture",
+        "REST APIs",
+        "Objective-C",
+        "GIT",
+        "AppAttest",
+        "Firebase",
+        "Jira"
+    ]
+}

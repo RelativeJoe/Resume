@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct FooterViewModifier: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension View {
+    func resumeFooter() -> some View {
+        overlay(alignment: .bottomTrailing) {
+            HStack(spacing: 2) {
+                Text("This resume was built using SwiftUI, check it out!")
+                    .foregroundStyle(.text)
+                LinkView(item: Links.resume)
+            }.font(.pdf(.footnote))
+            .padding(15)
+        }
     }
-}
-
-#Preview {
-    FooterViewModifier()
 }

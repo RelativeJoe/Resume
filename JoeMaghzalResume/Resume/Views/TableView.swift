@@ -1,5 +1,5 @@
 //
-//  SectionedView.swift
+//  TableView.swift
 //  JoeMaghzalResume
 //
 //  Created by Joe Maghzal on 06/08/2024.
@@ -10,65 +10,85 @@ import SwiftUI
 struct TableView: View {
     let items: [TableItem]
     var body: some View {
-        VStack(alignment: .leading, spacing: 7) {
-            Text("EDUCATION")
-                .foregroundStyle(.prime)
-                .font(.title2.weight(.bold))
-            VStack(alignment: .leading, spacing: 2) {
-                ForEach(items) { item in
-                    let isLastItem = item == items.last
-                    HStack(alignment: .top, spacing: 12) {
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text(item.date)
-                                .foregroundStyle(.prime)
-                                .font(.system(size: 10).weight(.bold))
-                            Text(item.location)
-                        }
-                        VStack(spacing: 2) {
-                            Circle()
-                                .fill(.prime)
-                                .frame(width: 5, height: 5)
-                            RoundedRectangle(cornerRadius: 1)
-                                .fill(.grey)
-                                .frame(width: 1)
-                        }
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text(item.title)
-                                .foregroundStyle(.prime)
-                                .font(.system(size: 12))
+        Grid(horizontalSpacing: 10, verticalSpacing: 2) {
+            ForEach(items) { item in
+                let isLastItem = item == items.last
+                GridRow(alignment: .separatorTop) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(item.date)
+                            .foregroundStyle(.prime)
+                            .font(.pdf(.subheadline, weight: .bold))
+                        Text(item.location)
+                    }.alignmentGuide(.separatorTop) { dimension in
+                        dimension[.top] + dimension.height/4
+                    }
+                    
+                    seperator
+                    
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(item.title)
+                            .foregroundStyle(.prime)
+                            .font(.pdf(.headline, weight: .light))
+                            .alignmentGuide(.separatorTop) { dimension in
+                                dimension[VerticalAlignment.center]
+                            }
+                        HStack(spacing: 2) {
                             Text(item.subTitle)
                                 .foregroundStyle(.second)
                                 .fontWeight(.semibold)
-                            VStack(alignment: .leading, spacing: 1) {
-                                Text(item.body)
-                                ForEach(item.bullets, id: \.self) { bullet in
-                                    HStack(alignment: .firstTextBaseline, spacing: 4) {
-                                        Text("\u{2022}")
-                                        Text(bullet)
-                                    }
+                            if let link = item.link {
+                                LinkView(item: link)
+                            }
+                        }
+                        VStack(alignment: .leading, spacing: 1) {
+                            ForEach(item.bullets, id: \.self) { bullet in
+                                HStack(alignment: .firstTextBaseline, spacing: 4) {
+                                    Text("\u{2022}")
+                                    Text(bullet)
                                 }
                             }
-                        }.padding(.bottom, isLastItem ? 0: 15)
-                    }.fixedSize(horizontal: false, vertical: true)
+                        }
+                    }.padding(.bottom, isLastItem ? 0: 10)
+                    .frame(maxWidth: .infinity)
                 }
             }
+        }.fixedSize(horizontal: false, vertical: true)
+    }
+    
+    private var seperator: some View {
+        VStack(spacing: 2) {
+            Circle()
+                .fill(.prime)
+                .frame(width: 5, height: 5)
+                .alignmentGuide(.separatorTop) { dimension in
+                    dimension[.top] + dimension.height/2
+                }
+            RoundedRectangle(cornerRadius: 1)
+                .fill(.grey)
+                .frame(width: 1)
         }
     }
 }
 
-struct TableItem: Identifiable {
+struct TableItem: Identifiable, Equatable {
     let id = UUID()
     let title: String
     let subTitle: String
-    let body: String
-    var bullets: [String] = []
+    var link: LinkItem?
+    let bullets: [String]
     let date: String
     let location: String
 }
 
 #Preview {
-    TableView(items: [
-        TableItem(title: "iOS Engineer", subTitle: "Toters", body: "bfkwebrjwh", date: "11/2023 - Present", location: "Zalka, Lebanon"),
-        TableItem(title: "hjbaw", subTitle: "fshbfjkhw", body: "bfkwebrjwh", date: "wbjwjdwjk", location: "fjbejwjhrw")
-    ])
+    TableView(items: Experience.items)
+}
+
+extension VerticalAlignment {
+    enum SperatorTop: AlignmentID {
+        static func defaultValue(in context: ViewDimensions) -> CGFloat {
+            context[.top]
+        }
+    }
+    static let separatorTop = VerticalAlignment(SperatorTop.self)
 }

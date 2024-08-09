@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct SkillsView: View {
+    let skills: [String]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        WrappingHStack(horizontalSpacing: 10) {
+            ForEach(skills, id: \.self) { skill in
+                VStack(spacing: 2) {
+                    Text(skill)
+                        .foregroundStyle(.darkText)
+                        .font(.pdf(.subheadline, weight: .bold))
+                        .padding(.horizontal, 5)
+                    RoundedRectangle(cornerRadius: 1)
+                        .fill(.grey)
+                        .frame(height: 1)
+                }.fixedSize(horizontal: true, vertical: false)
+            }
+        }
     }
 }
 
 #Preview {
-    SkillsView()
+    SkillsView(skills: Skills.items)
 }

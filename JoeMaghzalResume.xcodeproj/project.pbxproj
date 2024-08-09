@@ -7,19 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A99ECDA42C64AD8000F4C62F /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECDA32C64AD8000F4C62F /* Experience.swift */; };
+		A99ECDA72C64D19600F4C62F /* FirstPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECDA62C64D19600F4C62F /* FirstPageView.swift */; };
+		A99ECDA92C64D1DD00F4C62F /* SecondPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECDA82C64D1DD00F4C62F /* SecondPageView.swift */; };
+		A99ECDAB2C64F73E00F4C62F /* SectionViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECDAA2C64F73E00F4C62F /* SectionViewModifier.swift */; };
+		A99ECDAD2C64F91500F4C62F /* WrappingHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECDAC2C64F91500F4C62F /* WrappingHStack.swift */; };
+		BA6338C12C650F1E00275FC7 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338C02C650F1E00275FC7 /* SkillsView.swift */; };
+		BA6338C32C6522C700275FC7 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338C22C6522C700275FC7 /* Skills.swift */; };
+		BA6338C62C6610F700275FC7 /* OnlineLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338C52C6610F700275FC7 /* OnlineLinksView.swift */; };
+		BA6338C82C6612A500275FC7 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338C72C6612A500275FC7 /* Links.swift */; };
+		BA6338CA2C66163C00275FC7 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338C92C66163C00275FC7 /* Header.swift */; };
+		BA6338CC2C66170900275FC7 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338CB2C66170900275FC7 /* Education.swift */; };
+		BA6338D02C661BFE00275FC7 /* PDFStyleViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338CF2C661BFE00275FC7 /* PDFStyleViewModifier.swift */; };
+		BA6338D22C661CD500275FC7 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338D12C661CD500275FC7 /* ProjectsView.swift */; };
+		BA6338D42C661D3C00275FC7 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338D32C661D3C00275FC7 /* Projects.swift */; };
+		BA6338D62C6637E000275FC7 /* FooterViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338D52C6637E000275FC7 /* FooterViewModifier.swift */; };
+		BA6338D82C66462700275FC7 /* PDFFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6338D72C66462700275FC7 /* PDFFont.swift */; };
 		BA694DB22C6291910084B058 /* JoeMaghzalResumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA694DB12C6291910084B058 /* JoeMaghzalResumeApp.swift */; };
 		BA694DB42C6291910084B058 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA694DB32C6291910084B058 /* ContentView.swift */; };
 		BA694DB62C6291910084B058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA694DB52C6291910084B058 /* Assets.xcassets */; };
 		BA694DB92C6291910084B058 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA694DB82C6291910084B058 /* Preview Assets.xcassets */; };
+		BA694DC12C6291F70084B058 /* PDFRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA694DC02C6291F70084B058 /* PDFRenderer.swift */; };
+		BA694DD12C63C67D0084B058 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA694DCE2C63C67D0084B058 /* TableView.swift */; };
+		BA694DD22C63C67D0084B058 /* HeaderItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA694DCC2C63C67D0084B058 /* HeaderItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A99ECDA32C64AD8000F4C62F /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		A99ECDA62C64D19600F4C62F /* FirstPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageView.swift; sourceTree = "<group>"; };
+		A99ECDA82C64D1DD00F4C62F /* SecondPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageView.swift; sourceTree = "<group>"; };
+		A99ECDAA2C64F73E00F4C62F /* SectionViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModifier.swift; sourceTree = "<group>"; };
+		A99ECDAC2C64F91500F4C62F /* WrappingHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingHStack.swift; sourceTree = "<group>"; };
+		BA6338C02C650F1E00275FC7 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		BA6338C22C6522C700275FC7 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		BA6338C52C6610F700275FC7 /* OnlineLinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineLinksView.swift; sourceTree = "<group>"; };
+		BA6338C72C6612A500275FC7 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		BA6338C92C66163C00275FC7 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		BA6338CB2C66170900275FC7 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
+		BA6338CF2C661BFE00275FC7 /* PDFStyleViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFStyleViewModifier.swift; sourceTree = "<group>"; };
+		BA6338D12C661CD500275FC7 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		BA6338D32C661D3C00275FC7 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		BA6338D52C6637E000275FC7 /* FooterViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewModifier.swift; sourceTree = "<group>"; };
+		BA6338D72C66462700275FC7 /* PDFFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFont.swift; sourceTree = "<group>"; };
 		BA694DAE2C6291910084B058 /* JoeMaghzalResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoeMaghzalResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA694DB12C6291910084B058 /* JoeMaghzalResumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoeMaghzalResumeApp.swift; sourceTree = "<group>"; };
 		BA694DB32C6291910084B058 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA694DB52C6291910084B058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA694DB82C6291910084B058 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA694DBA2C6291910084B058 /* JoeMaghzalResume.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JoeMaghzalResume.entitlements; sourceTree = "<group>"; };
+		BA694DC02C6291F70084B058 /* PDFRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFRenderer.swift; sourceTree = "<group>"; };
+		BA694DCC2C63C67D0084B058 /* HeaderItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderItemsView.swift; sourceTree = "<group>"; };
+		BA694DCE2C63C67D0084B058 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +71,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A99ECDA22C64AD7400F4C62F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A99ECDA62C64D19600F4C62F /* FirstPageView.swift */,
+				A99ECDA82C64D1DD00F4C62F /* SecondPageView.swift */,
+				BA694DCC2C63C67D0084B058 /* HeaderItemsView.swift */,
+				BA694DCE2C63C67D0084B058 /* TableView.swift */,
+				BA6338C02C650F1E00275FC7 /* SkillsView.swift */,
+				BA6338C52C6610F700275FC7 /* OnlineLinksView.swift */,
+				BA6338D12C661CD500275FC7 /* ProjectsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A99ECDA52C64AEF300F4C62F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A99ECDA32C64AD8000F4C62F /* Experience.swift */,
+				BA6338CB2C66170900275FC7 /* Education.swift */,
+				BA6338C72C6612A500275FC7 /* Links.swift */,
+				BA6338C22C6522C700275FC7 /* Skills.swift */,
+				BA6338C92C66163C00275FC7 /* Header.swift */,
+				BA6338D32C661D3C00275FC7 /* Projects.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BA6338C42C6610E300275FC7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A99ECDAA2C64F73E00F4C62F /* SectionViewModifier.swift */,
+				A99ECDAC2C64F91500F4C62F /* WrappingHStack.swift */,
+				BA6338CF2C661BFE00275FC7 /* PDFStyleViewModifier.swift */,
+				BA6338D52C6637E000275FC7 /* FooterViewModifier.swift */,
+				BA6338D72C66462700275FC7 /* PDFFont.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		BA694DA52C6291910084B058 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +129,10 @@
 		BA694DB02C6291910084B058 /* JoeMaghzalResume */ = {
 			isa = PBXGroup;
 			children = (
+				BA694DCF2C63C67D0084B058 /* Resume */,
 				BA694DB12C6291910084B058 /* JoeMaghzalResumeApp.swift */,
 				BA694DB32C6291910084B058 /* ContentView.swift */,
+				BA694DC02C6291F70084B058 /* PDFRenderer.swift */,
 				BA694DB52C6291910084B058 /* Assets.xcassets */,
 				BA694DBA2C6291910084B058 /* JoeMaghzalResume.entitlements */,
 				BA694DB72C6291910084B058 /* Preview Content */,
@@ -67,6 +146,16 @@
 				BA694DB82C6291910084B058 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA694DCF2C63C67D0084B058 /* Resume */ = {
+			isa = PBXGroup;
+			children = (
+				A99ECDA22C64AD7400F4C62F /* Views */,
+				A99ECDA52C64AEF300F4C62F /* Data */,
+				BA6338C42C6610E300275FC7 /* Components */,
+			);
+			path = Resume;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +228,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA6338C62C6610F700275FC7 /* OnlineLinksView.swift in Sources */,
+				BA694DD12C63C67D0084B058 /* TableView.swift in Sources */,
+				BA6338D22C661CD500275FC7 /* ProjectsView.swift in Sources */,
+				BA6338C32C6522C700275FC7 /* Skills.swift in Sources */,
+				BA694DD22C63C67D0084B058 /* HeaderItemsView.swift in Sources */,
+				BA6338D02C661BFE00275FC7 /* PDFStyleViewModifier.swift in Sources */,
+				BA694DC12C6291F70084B058 /* PDFRenderer.swift in Sources */,
+				BA6338D42C661D3C00275FC7 /* Projects.swift in Sources */,
+				BA6338C12C650F1E00275FC7 /* SkillsView.swift in Sources */,
+				BA6338D82C66462700275FC7 /* PDFFont.swift in Sources */,
+				BA6338CC2C66170900275FC7 /* Education.swift in Sources */,
 				BA694DB42C6291910084B058 /* ContentView.swift in Sources */,
+				A99ECDA92C64D1DD00F4C62F /* SecondPageView.swift in Sources */,
+				A99ECDAD2C64F91500F4C62F /* WrappingHStack.swift in Sources */,
+				A99ECDAB2C64F73E00F4C62F /* SectionViewModifier.swift in Sources */,
+				BA6338CA2C66163C00275FC7 /* Header.swift in Sources */,
+				A99ECDA42C64AD8000F4C62F /* Experience.swift in Sources */,
+				BA6338C82C6612A500275FC7 /* Links.swift in Sources */,
 				BA694DB22C6291910084B058 /* JoeMaghzalResumeApp.swift in Sources */,
+				A99ECDA72C64D19600F4C62F /* FirstPageView.swift in Sources */,
+				BA6338D62C6637E000275FC7 /* FooterViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JoeMaghzalResume/JoeMaghzalResume.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -282,8 +391,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.buildexperience.JoeMaghzalResume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -296,6 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JoeMaghzalResume/JoeMaghzalResume.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -307,8 +417,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.buildexperience.JoeMaghzalResume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

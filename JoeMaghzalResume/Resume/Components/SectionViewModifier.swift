@@ -12,7 +12,7 @@ extension View {
         VStack(alignment: .leading, spacing: 7) {
             Text(title)
                 .foregroundStyle(.prime)
-                .font(.system(size: 14).weight(.bold))
+                .font(.pdf(.title2, weight: .bold))
             self
         }
     }
